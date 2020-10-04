@@ -23,6 +23,8 @@ export const BAR_MAP = {
 
 export function renderThumbStyle({ move, size, bar }) {
   const style = {};
+
+  // axis指主轴，如果是垂直滚动条就是Y
   const translate = `translate${bar.axis}(${ move }%)`;
 
   style[bar.size] = size;

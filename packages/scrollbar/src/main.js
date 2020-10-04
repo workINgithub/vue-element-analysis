@@ -40,6 +40,7 @@ export default {
   },
 
   render(h) {
+    // debugger;
     let gutter = scrollbarWidth();
     let style = this.wrapStyle;
 
@@ -102,6 +103,7 @@ export default {
 
       this.moveY = ((wrap.scrollTop * 100) / wrap.clientHeight);
       this.moveX = ((wrap.scrollLeft * 100) / wrap.clientWidth);
+      // debugger;
     },
 
     update() {
