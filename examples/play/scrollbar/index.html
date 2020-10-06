@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="outer scrollbar--hidden-default">
+    <div class="wrap">
+      <div class="wrap">
+        <div class="inner"></div>
+      </div>
+    </div>
+  </div>
+  <style>
+    .outer {
+      overflow: scroll;
+      scrollbar-width: none;
+    }
+    .wrap {
+      height: 300px;
+    }
+    .inner {
+        height: 600px;
+        background-image: linear-gradient(#e66465, #9198e5);
+    }
+    /* chrome隐藏scrollbar的秘密 */
+    .scrollbar--hidden-default::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+  </style>
+</body>
+</html>

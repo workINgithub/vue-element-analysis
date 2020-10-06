@@ -53,7 +53,7 @@ export default {
     },
     /** 点击轨道时，更新视图 */
     clickTrackHandler(e) {
-      debugger;
+      // debugger;
 
       // 鼠标点击位置 离 滚动轨道初始位置的距离。
       const offset = Math.abs(e.target.getBoundingClientRect()[this.bar.direction] - e[this.bar.client]);

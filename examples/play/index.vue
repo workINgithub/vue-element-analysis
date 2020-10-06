@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import ExploreScrollBar from './scrollbar.vue';
+import ExploreScrollBar from './scrollbar/scrollbar.vue';
   export default {
     components: {
       ExploreScrollBar
