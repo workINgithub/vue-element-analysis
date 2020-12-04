@@ -3,7 +3,7 @@
 ### 使用手册
 
 * native: Boolean,
-* wrapStyle: {},
+* wrapStyle: string | Array,
 * wrapClass: {},
 * viewClass: {},
 * viewStyle: {},
@@ -28,9 +28,11 @@
 这里就是利用了选择器的奥妙，当使用者悬浮到scrollbar这个元素上时，css解析器找到了这个元素并应用该样式。
 
 ```css
-  .wrap:hover .bar {
-    /* ... */
-  }
+.el-scrollbar:active>.el-scrollbar__bar, .el-scrollbar:focus>.el-scrollbar__bar, .el-scrollbar:hover>.el-scrollbar__bar {
+    opacity: 1;
+    -webkit-transition: opacity 340ms ease-out;
+    transition: opacity 340ms ease-out;
+}
 ```
 
 另外如何隐藏原生样式这里有几个不同的方法。
